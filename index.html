@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Serena | Cafeteria & Doceria</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones externos para o carrinho -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Doce Serena</h1>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#" id="cart-icon-nav">Carrinho (<span class="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h2>Um café, um sorriso e um momento de paz.</h2>
+            <p>Cafés especiais, doces artesanais e um ambiente aconchegante para tornar seu dia mais leve.</p>
+            <button class="btn-cardapio">Conheça o Cardápio</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre reveal">
+        <div class="container">
+            <h2>Nossa Cafeteria</h2>
+            <p>A Doce Serena nasceu para transformar pequenos momentos em memórias especiais.</p>
+            <p>Nossa missão é criar memórias através do paladar. Por isso, selecionamos rigorosamente nossos grãos de café para oferecer uma experiência sensorial superior. Cada um de nossos doces é feito de forma artesanal, respeitando o tempo e a tradição da confeitaria, assim como nossos pães fresquinhos, assados todos os dias.</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DO CARDÁPIO / PRODUTOS -->
+    <section id="cardapio" class="catalog-section">
+        <h2 class="section-title">Nosso Cardápio</h2>
+        <div class="cards-grid">
+            
+            <!-- Produto 1 -->
+            <div class="product-card reveal" data-id="1" data-name="Espresso Tradicional" data-price="8.50">
+                <div class="product-img">
+                    <img src="EXPRESSOTRADICIONAL.jpg" alt="Espresso Tradicional">
+                </div>
+                <div class="product-info">
+                    <h3>Espresso Tradicional</h3>
+                    <p>Grãos selecionados com notas de chocolate e finalização marcante.</p>
+                    <div class="product-footer">
+                        <span class="price">R$ 8,50</span>
+                        <button class="add-to-cart-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card reveal" data-id="2" data-name="Cappuccino Italiano" data-price="14.00">
+                <div class="product-img">
+                    <img src="Cappuccino.jpg" alt="Cappuccino Italiano">
+                </div>
+                <div class="product-info">
+                    <h3>Cappuccino Italiano</h3>
+                    <p>Café espresso, leite vaporizado cremoso e um toque de cacau polvilhado.</p>
+                    <div class="product-footer">
+                        <span class="price">R$ 14,00</span>
+                        <button class="add-to-cart-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card reveal" data-id="3" data-name="Fatia de Bolo de Cenoura" data-price="16.00">
+                <div class="product-img">
+                    <img src="bolo_cenoura.jpg" alt="Bolo de Cenoura">
+                </div>
+                <div class="product-info">
+                    <h3>Bolo de Cenoura</h3>
+                    <p>Massa fofinha artesanal com uma cobertura generosa de brigadeiro gourmet.</p>
+                    <div class="product-footer">
+                        <span class="price">R$ 16,00</span>
+                        <button class="add-to-cart-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="product-card reveal" data-id="4" data-name="Croissant de Manteiga" data-price="12.50">
+                <div class="product-img">
+                    <img src="croissant.webp" alt="Croissant">
+                </div>
+                <div class="product-info">
+                    <h3>Croissant de Manteiga</h3>
+                    <p>Folhado francês legítimo, super crocante por fora e macio por dentro.</p>
+                    <div class="product-footer">
+                        <span class="price">R$ 12,50</span>
+                        <button class="add-to-cart-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="product-card reveal" data-id="5" data-name="Cheesecake de Frutas Vermelhas" data-price="18.90">
+                <div class="product-img">
+                    <img src="cheesecake.png" alt="Cheesecake">
+                </div>
+                <div class="product-info">
+                    <h3>Cheesecake de Frutas Vermelhas</h3>
+                    <p>Base crocante de biscoito, creme de queijo leve e calda artesanal de frutas.</p>
+                    <div class="product-footer">
+                        <span class="price">R$ 18,90</span>
+                        <button class="add-to-cart-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="product-card reveal" data-id="6" data-name="Pão na Chapa Premium" data-price="7.00">
+                <div class="product-img">
+                    <img src="Pão-na-Chapa.jpeg" alt="Pão na Chapa">
+                </div>
+                <div class="product-info">
+                    <h3>Pão na Chapa com Requeijão</h3>
+                    <p>Pão francês quentinho na chapa com requeijão tostado na medida certa.</p>
+                    <div class="product-footer">
+                        <span class="price">R$ 7,00</span>
+                        <button class="add-to-cart-btn">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABA LATERAL DO CARRINHO (SIDEBAR) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Seu Pedido</h3>
+            <button class="close-cart" id="close-cart">✕</button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart-text">Seu carrinho está vazio.</p>
+        </div>
+
+        <div class="payment-method">
+            <h4>Forma de Pagamento</h4>
+        
+            <select id="payment-method">
+                <option value="Pix">Pix</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-value">R$ 0,00</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn" disabled>Finalizar Pedido</button>
+        </div>
+    </div>
+
+    <!-- Botão Flutuante do Carrinho para Mobile -->
+    <div class="floating-cart-btn" id="floating-cart">
+        🛒 <span class="cart-count">0</span>
+    </div>
+
+    <section class="banner2">
+        <h2>Café da manhã o dia todo ☕</h2>
+    </section>
+
+    <footer>
+        <p>© 2026 Doce Serena • Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
